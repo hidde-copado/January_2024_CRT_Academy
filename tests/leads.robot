@@ -4,7 +4,6 @@
 *** Settings ***
 
 Library    QForce
-
 Library    QWeb
 Resource               ../resources/keywords.robot
 Library                FakerLibrary
