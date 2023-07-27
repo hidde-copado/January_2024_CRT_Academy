@@ -2,6 +2,10 @@
 # before running this suite.
 
 *** Settings ***
+
+Library    QForce
+
+Library    QWeb
 Resource               ../resources/keywords.robot
 Library                FakerLibrary
 Suite Setup            Setup Browser
@@ -38,6 +42,14 @@ Entering A Lead
 
 Delete lead
     [Documentation]
-    [Tags]             Lead
-    Appstate           Home
-    LaunchApp          Sales
+    [Tags]            Lead
+    Appstate          Home
+    LaunchApp         Sales
+    ClickText         Leads
+    ClickText         ${first_name} ${last_name}
+    ClickText         Show more actions
+    ClickText         Delete
+    UseModal          On
+    VerifyText        Are you sure you want to delete this lead?
+    ClickText         Delete
+    VerifyText        Lead "${first_name} ${last_name}" was deleted
