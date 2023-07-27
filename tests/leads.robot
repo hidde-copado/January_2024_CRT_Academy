@@ -12,13 +12,6 @@ Suite Setup            Setup Browser
 Suite Teardown         End suite
 
 *** Test Cases ***
-Create random persona
-    [Documentation]
-    [Tags]
-    ${name}            FakerLibrary.Name
-    ${name}            Split String                ${name}
-    ${first_name}      Set Variable                ${name}[0]
-    ${last_name}       Set Variable                ${name}[1]
 
 Entering A Lead
     [tags]             Lead
