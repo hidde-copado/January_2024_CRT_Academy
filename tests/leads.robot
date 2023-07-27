@@ -16,7 +16,7 @@ Entering A Lead
     Appstate           Home
     LaunchApp          Sales
 
-Delete lead
+Delete A Lead
     [Documentation]
     [Tags]
     Appstate           Home
