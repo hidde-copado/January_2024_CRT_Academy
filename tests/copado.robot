@@ -19,4 +19,4 @@ Multiple elements with same name
 Self healing
     [Documentation]    Test script for demonstrating self healing.
     GoTo               https://www.copado.com/robotic-testing
-    ClickText          SPEAK TO SALES
+    ClickText          SPEAK TO SALES    timeout=1s
