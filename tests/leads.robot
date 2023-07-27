@@ -2,6 +2,10 @@
 # before running this suite.
 
 *** Settings ***
+
+Library    QForce
+
+Library    QWeb
 Resource               ../resources/keywords.robot
 Suite Setup            Setup Browser
 Suite Teardown         End suite
@@ -12,9 +16,10 @@ ${last_name}
 
 *** Test Cases ***
 Entering A Lead
-    [tags]             Lead
-    Appstate           Home
-    LaunchApp          Sales
+    [tags]            Lead
+    Appstate          Home
+    LaunchApp         Sales
+
 
 Delete A Lead
     [Documentation]
