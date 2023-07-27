@@ -8,12 +8,13 @@ Suite Teardown         End suite
 
 *** Test Cases ***
 Entering A Lead
-    [tags]             Lead
+    [Documentation]    This testscript is used for entering a lead within Salesforce.
+    [tags]             Lead    smoke    sanity
     Appstate           Home
     LaunchApp          Sales
 
 Delete lead
     [Documentation]
-    [Tags]
+    [Tags]    Lead
     Appstate           Home
     LaunchApp          Sales
