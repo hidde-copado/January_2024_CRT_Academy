@@ -47,6 +47,7 @@ Delete lead
     LaunchApp         Sales
     ClickText         Leads
     ClickText         ${first_name} ${last_name}
+    VerifyText        Submit for Approval
     ClickText         Show more actions
     ClickText         Delete
     UseModal          On
