@@ -6,10 +6,6 @@ Resource               ../resources/keywords.robot
 Suite Setup            Setup Browser
 Suite Teardown         End suite
 
-*** Variables ***
-${first_name}          
-${last_name}
-
 *** Test Cases ***
 Entering A Lead
     [tags]             Lead
