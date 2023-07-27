@@ -6,7 +6,6 @@ Library                   String
 *** Variables ***
 # IMPORTANT: Please read the readme.txt to understand needed variables and how to handle them!!
 ${BROWSER}                chrome
-${username}               pace.delivery1@qentinel.com.demonew
 ${login_url}              ${url}           # Salesforce instance. NOTE: Should be overwritten in CRT variables
 ${home_url}               ${login_url}/lightning/page/home
 
