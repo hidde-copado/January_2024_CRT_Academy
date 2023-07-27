@@ -36,14 +36,3 @@ Delete A Lead
     [Tags]
     Appstate           Home
     LaunchApp          Sales
-
-Multiple elements with same name
-    [Documentation]    Test sript to show the anchor options,
-    ...                when interacting with elements with the same name.
-    GoTo               https://www.copado.com
-    VerifyText         Learn More
-
-Self healing
-    [Documentation]    Test script for demonstrating self healing.
-    GoTo               https://www.copado.com
-    ClickText          SPEAK TO SALES
