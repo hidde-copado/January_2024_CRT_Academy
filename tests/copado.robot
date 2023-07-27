@@ -10,7 +10,7 @@ Multiple elements with same name
     [Documentation]    Test sript to show the anchor options,
     ...                when interacting with elements with the same name.
     GoTo               https://www.copado.com/robotic-testing
-    VerifyText         Learn More
+    VerifyText         Learn More    anchor=ServiceNow
 
 Self healing
     [Documentation]    Test script for demonstrating self healing.
