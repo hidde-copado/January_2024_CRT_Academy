@@ -11,10 +11,6 @@ Library                FakerLibrary
 Suite Setup            Setup Browser
 Suite Teardown         End suite
 
-*** Variables ***
-${first_name}
-${last_name}
-
 *** Test Cases ***
 Create random persona
     [Documentation]
@@ -28,7 +24,6 @@ Entering A Lead
     [tags]             Lead
     Appstate           Home
     LaunchApp          Sales
-
 
     ClickText          Leads
     ClickText          New
@@ -50,3 +45,12 @@ Delete A Lead
     [Tags]
     Appstate           Home
     LaunchApp          Sales
+    
+    ClickText    Leads
+    UseTable    Item Number
+    ClickCell    r?${first_name} ${last_name}/c11
+    ClickText    Delete
+    UseModal    On
+    VerifyText    Are you sure you want to delete this lead?
+    ClickText    Delete
+    VerifyText    Lead "Sheri Mitchell" was deleted. Undo
