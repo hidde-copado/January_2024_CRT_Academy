@@ -2,36 +2,21 @@
 # before running this suite.
 
 *** Settings ***
-
-Library                QForce
 Resource               ../resources/keywords.robot
 Suite Setup            Setup Browser
 Suite Teardown         End suite
 
-*** Test Cases ***
+*** Variables ***
+${first_name}          
+${last_name}
 
+*** Test Cases ***
 Entering A Lead
     [tags]             Lead
     Appstate           Home
     LaunchApp          Sales
-    ClickText          Leads
-    VerifyText         Change Owner
-    VerifyText         Sales
-    ClickText          New
-    UseModal           On
-    PickList           Salutation                  Mr.
-    TypeText           First Name                  Hidde
-    TypeText           Last Name                   Visser
-    TypeText           *Company                    Copado
-    PickList           *Lead Status                Working - Contacted
-    PickList           Product Interest            GC5000 series
-    PickList           Primary                     No
-    ClickText          Save                        partial_match=False
-    UseModal           Off
-    VerifyText         Lead "Mr. Hidde Visser" was created.
-    
 
-Delete A Lead
+Delete lead
     [Documentation]
     [Tags]
     Appstate           Home
