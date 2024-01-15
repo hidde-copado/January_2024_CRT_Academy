@@ -12,8 +12,7 @@ Some Salesforce specific keywords are included to make testing easier.
 Usage
 -----
 * IMPORTANT:
-  * Setup MFA with mobile app as instructed here: 
-    https://help.pace.qentinel.com/qwords-reference/current/qwords/_attachments/QForce.html#mfa-setup
+  * Setup MFA with mobile app as instructed [here](https://docs.copado.com/resources/Storage/copado-robotic-testing-publication/CRT%20Site/qwords-reference/current/qwords/_attachments/QForce.html#mfa-setup)
   * OR contact CRT support for ip's which can be whitelisted.
 * Add your Salesforce instance url to CRT variable "login_url"
 * Add your Salesforce user to CRT variable "username"
@@ -35,3 +34,9 @@ Directory structure:
 
 * Tests are under "tests" folder
 * Supporting files are under "resources" folder
+
+
+Configure Github integration
+-----
+[Setup for Github can be found here.](https://docs.copado.com/articles/#!copado-robotic-testing-publication/github )https://docs.copado.com/articles/#!copado-robotic-testing-publication/github 
+ 
