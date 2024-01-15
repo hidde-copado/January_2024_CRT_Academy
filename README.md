@@ -38,5 +38,4 @@ Directory structure:
 
 Configure Github integration
 -----
-Setup for Github can be found [here](https://docs.copado.com/articles/#!copado-robotic-testing-publication/github )https://docs.copado.com/articles/#!copado-robotic-testing-publication/github .
- 
+Setup for Github can be found [here](https://docs.copado.com/articles/#!copado-robotic-testing-publication/github )
