@@ -1,10 +1,4 @@
-# July_2023_CRT_Academy
-
-Salesforce starter
-==================
-
-Salesforce specific Accelerator/starter suite.
-
+# January_2024_CRT_Academy
 
 Overview
 --------
