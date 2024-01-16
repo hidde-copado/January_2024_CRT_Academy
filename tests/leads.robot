@@ -3,8 +3,8 @@
 
 *** Settings ***
 
-Library    QForce
-Library    QWeb
+Library                QForce
+Library                QWeb
 Resource               ../resources/keywords.robot
 Library                FakerLibrary
 Suite Setup            Setup Browser
@@ -13,10 +13,10 @@ Suite Teardown         End suite
 *** Test Cases ***
 Create random persona
     [Documentation]    Prerequisite test script for creating a random persona
-    # ${name}            FakerLibrary.Name
-    # ${name}            Split String    ${name}
-    # ${first_name}      Set Variable    ${name}[0]
-    # ${last_name}       Set Variable    ${name}[1]
+    # ${name}          FakerLibrary.Name
+    # ${name}          Split String                ${name}
+    # ${first_name}    Set Variable                ${name}[0]
+    # ${last_name}     Set Variable                ${name}[1]
 
 Entering A Lead
     [Documentation]    Generate a test script by utilizing the recorder to input lead information within Salesforce.
@@ -41,15 +41,15 @@ Entering A Lead
 
 Delete lead
     [Documentation]
-    [Tags]            Lead
-    Appstate          Home
-    LaunchApp         Sales
-    ClickText         Leads
-    ClickText         ${first_name} ${last_name}
-    VerifyText        Submit for Approval
-    ClickText         Show more actions
-    ClickText         Delete
-    UseModal          On
-    VerifyText        Are you sure you want to delete this lead?
-    ClickText         Delete
-    VerifyText        Lead "${first_name} ${last_name}" was deleted
+    [Tags]             Lead
+    Appstate           Home
+    LaunchApp          Sales
+    ClickText          Leads
+    ClickText          ${first_name} ${last_name}
+    VerifyText         Submit for Approval
+    ClickText          Show more actions
+    ClickText          Delete
+    UseModal           On
+    VerifyText         Are you sure you want to delete this lead?
+    ClickText          Delete
+    VerifyText         Lead "${first_name} ${last_name}" was deleted
