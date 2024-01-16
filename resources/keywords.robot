@@ -60,7 +60,7 @@ Fill MFA
     ClickText            Verify 
 
 
-Home
+Salesforce Home
     [Documentation]       Navigate to homepage, login if needed
     GoTo                  ${home_url}
     ${login_status} =     IsText                      To access this page, you have to log in to Salesforce.    timeout=2s
