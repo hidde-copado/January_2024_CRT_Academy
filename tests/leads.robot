@@ -21,7 +21,7 @@ Create random persona
 Entering A Lead
     [Documentation]    Generate a test script by utilizing the recorder to input lead information within Salesforce.
     [tags]
-    Appstate           Home
+    Appstate           Salesforce Home
     LaunchApp          Sales
     ClickText          Leads
     VerifyText         Change Owner
