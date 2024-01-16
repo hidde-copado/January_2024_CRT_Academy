@@ -13,14 +13,14 @@ Suite Teardown         End suite
 *** Test Cases ***
 Create random persona
     [Documentation]    Prerequisite test script for creating a random persona
-    ${name}            FakerLibrary.Name
-    ${name}            Split String    ${name}
-    ${first_name}      Set Variable    ${name}[0]
-    ${last_name}       Set Variable    ${name}[1]
+    # ${name}            FakerLibrary.Name
+    # ${name}            Split String    ${name}
+    # ${first_name}      Set Variable    ${name}[0]
+    # ${last_name}       Set Variable    ${name}[1]
 
 Entering A Lead
-    [Documentation]    This testscript is used for entering a lead within Salesforce.
-    [tags]             Lead                        smoke                  sanity
+    [Documentation]    Generate a test script by utilizing the recorder to input lead information within Salesforce.
+    [tags]
     Appstate           Home
     LaunchApp          Sales
     ClickText          Leads
