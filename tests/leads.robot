@@ -47,6 +47,9 @@ Modify the lead using the FakerLibrary
     Click Text            Save                        partial_match=False
     Use Modal             Off
 
+    Set Suite Variable    ${first_name}
+    Set Suite Variable    ${last_name}
+
 Delete lead
     [Documentation]       Delete the lead using the API and leverage AI-driven intent-based testing.
     [Tags]                Delete                      Lead                        API
