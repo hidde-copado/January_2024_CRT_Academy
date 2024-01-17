@@ -8,8 +8,8 @@ Library                   String
 ${BROWSER}                chrome
 ${login_url}              ${url}           # Salesforce instance. NOTE: Should be overwritten in CRT variables
 ${home_url}               ${login_url}/lightning/page/home
-${client_id}
-${client_secret}
+${client_id}              3MVG9_MSrVW5eWEml1ZrzWBkwtYpMUPR.7Txa5qdIwcKWtSH6ttPLCrA2Qf2R1Kg8VKju4RE3A4awf4.lq2OJ
+${client_secret}          ECE33C123A23FD2737081C02AC9E89E6BC118E153F998A565DE6A33DBD3F07E3
 
 
 *** Keywords ***
